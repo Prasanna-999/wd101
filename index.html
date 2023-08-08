@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration form</title>
+        <style>
+            .Container1{
+                background-color:#e0f0ab;
+                border:1px solid #ccc;
+                width:50%;
+                margin:0 auto;
+                padding:30px;
+                line-height: 1.5;
+
+            }
+            .Container2{
+                height:60%;
+                width:50%;
+                margin:0 auto;
+                border:1px solid #ccc;
+                background-color: #e0f0ab;
+                line-height: 1.5;
+            }
+            table
+            {
+                width:100%;
+                border-collapse:1px;
+                text-align:center;
+            }
+            th,td{
+                padding:8px;
+                border-bottom:1px solid white;
+            }
+            button{
+                background-color:green;
+                padding-top:7px
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div id="Container1">
+                <center>
+                <h2>Registration form</h2>
+                <form id="u-form">
+                    <label for="name">Name</label>
+                    <input required type="text" id="name" name="name" placeholder="Enter full name">
+                    <br><br>
+
+                    <label for="email">Email</label>
+                    <input required type="email" id="email" name="email" placeholder="Enter email">
+                    <br><br>
+
+                    <label for="password">Password</label>
+                    <input required type="password" id="password" name="password" placeholder="Enter password">
+                    <br><br>
+
+                    <label for="dob">Date of Birth</label>
+                    <input required type="date" id="dob" name="dob" min="1968-08-08" max="2005-08-08"/>
+                    <br><br>
+
+                    <label for="acceptTerms">Accept Terms & Conditions</label>
+                    <input required type="checkbox" id="acceptTerms" name="acceptTerms">
+                    <br><br>
+
+                    <button type="submit">Submit</button>
+                </form>
+                </center>
+            </div>
+        </div>
+        
+            <div>
+                <center>
+                    <div class="Container2">
+<h2 >Entries</h2>
+<div  id="u-details"></div>
+            </div>
+        </div>
+        </center>
+        
+        <script src="./index.js"></script>
+    </body>
+</html>
